@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.8)
+project(data_structures_and_algorithms_c)
+
+set(CMAKE_C_STANDARD 11)
+
+set(SOURCE_FILES main.c trees/node_binaryTree.c trees/traversal_binaryTree_preorder_recursive.c trees/traversal_binaryTree_inorder_recursive.c trees/traversal_binaryTree_postorder_recursive.c)
+add_executable(data_structures_and_algorithms_c ${SOURCE_FILES})
+add_executable(node_binaryTree trees/node_binaryTree.c)
+add_executable(traversal_binaryTree_preorder_recursive trees/traversal_binaryTree_preorder_recursive.c)
+add_executable(traversal_binaryTree_inorder_recursive trees/traversal_binaryTree_inorder_recursive.c)
+add_executable(traversal_binaryTree_postorder_recursive trees/traversal_binaryTree_postorder_recursive.c)
